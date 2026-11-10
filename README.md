@@ -12,6 +12,19 @@ Open [python.ipynb](./python.ipynb) in Jupyter or VS Code and run the cells in o
 - Grouping records with `defaultdict`
 - Parsing JSON
 
+## PostgreSQL practice
+
+Use [sql_dataset.sql](./sql_dataset.sql) to create and populate the `transactions` and `employees` tables used by [sql.sql](./sql.sql).
+
+### Load the sample data in pgAdmin 4
+
+1. Connect to PostgreSQL and select the database where you want to practice.
+2. Open **Tools → Query Tool**.
+3. Open `sql_dataset.sql` in the Query Tool and execute it (F5).
+4. Open `sql.sql` in the Query Tool and run its queries.
+
+The seed script can be run repeatedly without duplicating its sample rows. Transaction ID `7003` is intentionally repeated so the duplicate-detection query returns a result. The sample data also supports the customer window functions, date-gap analysis, and top-three-employees-per-team query.
+
 ## 3. Pipeline Architecture (40-50 min)
 
 This is where your current experience can help the most.
